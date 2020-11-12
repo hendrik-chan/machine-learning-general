@@ -70,8 +70,7 @@ df1.loc[dates[0]:dates[1], 'E'] = 1
 df1.dropna(how='any') #Drop any row that has missing values
 df1.fillna(value=5) #Filling missing data
 
-
-
-
-
-
+#Select any rows that have specific column blank.
+#https://stackoverflow.com/questions/40245507/python-pandas-selecting-rows-whose-column-value-is-null-none-nan
+#empty_email = dataset[dataset['email'].isna()]
+#empty_pbpass = dataset[dataset['s_pbpass_type'].isna()]
